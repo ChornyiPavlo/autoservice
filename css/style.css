@@ -127,7 +127,15 @@ header .logo img {
   border: none;
   cursor: pointer;
 }
-
+#tariffs img {
+  max-height: 250px;
+}
+.h-48 {
+  height: 48px;
+}
+#tariffs.black {
+  padding: 220px 0;
+}
 footer {
   padding: 20px;
   background-color: #b0bd9f;
@@ -310,6 +318,9 @@ footer {
   .tariffs {
     padding: 20px 0;
   }
+  #tariffs.black {
+    padding: 40px 0;
+  }
 }
 
 .navbar-nav .nav-item {
@@ -346,6 +357,13 @@ nav ul li:hover a {
 @media (max-width: 767px) {
   .navbar-nav .nav-item {
     margin: 0;
+  }
+  #services .service-card, #tariffs .service-card {
+    width: 100%;
+  }
+  #tariffs .service-row {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -582,11 +600,11 @@ nav ul li:hover a {
 
 .sub_bt {
   width: 100%;
-  color: #fbb901;
-  background-color: #aa1630;
+  color: #000;
+  background-color: #b0bd9f;
   font-size: 18px;
   border-radius: 30px;
-  border: 1px solid #aa1630;
+  border: 1px solid #b0bd9f;
   height: 60px;
   margin-top: 40px;
   cursor: pointer;
@@ -594,7 +612,7 @@ nav ul li:hover a {
 }
 
 .sub_bt:hover {
-  color: #aa1630;
-  background-color: #fbb901;
-  border-color: #aa1630;
+  color: #b0bd9f;
+  background-color: #000;
+  border-color: #b0bd9f;
 }
