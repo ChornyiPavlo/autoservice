@@ -142,7 +142,40 @@ footer {
   text-align: center;
   color: #000;
 }
+.animated-button {
+  width: 280px;
+  height: 80px;
+  background-color: #31a09d;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  animation: colorChange 3s infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid;
+}
 
+@keyframes colorChange {
+  0% {
+    background-color: #e32b17;
+  }
+  100% {
+    background-color: #28f225;
+  }
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.mob {
+  display: none;
+}
 /*===== NAVBAR =====*/
 .header_navbar {
   position: absolute;
@@ -285,7 +318,13 @@ footer {
     padding: 5px 12px;
     margin-top: 20px;
   }
-
+  .mob {
+    display: flex;
+    margin: auto;
+  }
+  .desc {
+    display: none!important;
+  }
   .main-banner {
      padding: 40px;
   }
